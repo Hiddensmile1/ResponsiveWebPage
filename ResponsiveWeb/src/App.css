@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  padding: 0;
+
+}
+
+.Container {
+  border: 2px solid purple;
+  background-color: rgb(243, 235, 243);
+}
+
+.header {
+  display: flex;
+  height: 70px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+
+}
+
+.subHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+
+.navBar {
+  display: flex;
+
+  a {
+    padding: 10px;
+    font-weight: 500px;
+    cursor: pointer;
+  }
+}
+
+a:hover {
+  color: plum;
+  /* background-color: purple; */
+}
+
+.button {
+  display: flex;
+  justify-content: space-between;
+  gap: 9px;
+}
+
+#sign {
+  border-radius: 4px;
+  border: 1px solid purple;
+  padding: 6px 12px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+#trial {
+  background: linear-gradient(to right, rgb(192, 61, 192), #c778eb, #df81cb, #d5a0a8);
+  color: white;
+  border: 1px solid rgb(219, 5, 219);
+  border-radius: 4px;
+  padding: 7px 20px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.logo {
+  justify-content: center;
+  align-items: center;
+}
+
+.subcontain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 83px;
+
+}
+
+.leftcontain {
+  width: 50%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.imgcontain {
+  background-image: url(./assets/prupleBg.jpg);
+  border-radius: 80%;
+  /* height: 100%;
+  width: 100%; */
+  border: 10px double purple;
+}
+
+.row {
+  background: linear-gradient(to right, rgb(192, 61, 192), #c778eb, #df81cb, #d5a0a8);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}

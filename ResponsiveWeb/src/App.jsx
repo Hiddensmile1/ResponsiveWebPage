@@ -4,7 +4,8 @@ import { RiArrowDropDownLine } from "react-icons/ri";
 import magicleapImage from "./assets/MagicLeap1.png";
 import { BsMicrosoft } from "react-icons/bs";
 import { SiCodecov } from "react-icons/si";
-
+import { IoMenu } from "react-icons/io5";
+import { CiSearch } from "react-icons/ci";
 
 const App = () => {
 
@@ -32,7 +33,7 @@ const App = () => {
             </div>
             <a style={{ fontSize: "18px" }}>Contact</a>
           </nav>
-
+          <IoMenu className="burgerMenu" style={{ color: "purple", fontSize: "30px" }} />
           <div className="button">
             <input type="button" value="Sign In " id="sign" />
             <input type="button" value="Free Trial" id="trial" />
@@ -59,17 +60,17 @@ const App = () => {
         </div>
         <section className="section2">
           <div className="row">
-            <div>
+            <div style={{ fontSize: "30px", marginBottom: "10px", marginTop: "10px" }}>
               duolingo
             </div>
             <div>
               <img src={magicleapImage} alt="" style={{ width: "140px" }} />
             </div>
-            <div>
-              <BsMicrosoft />Microsoft
+            <div style={{ fontSize: "30px", marginBottom: "10px", marginTop: "10px" }}>
+              <BsMicrosoft style={{ paddingTop: "10px" }} />Microsoft
             </div>
-            <div>
-              <SiCodecov />Codecov
+            <div style={{ fontSize: "30px", marginBottom: "10px", marginTop: "10px" }}>
+              <SiCodecov style={{ paddingTop: "10px" }} />Codecov
             </div>
             <div>
 
@@ -77,6 +78,24 @@ const App = () => {
           </div>
         </section>
       </main>
+      <section className="mainSection">
+        <section className="submainSection">
+          <div className="searchSection">
+            Search Courses
+          </div>
+          <div className="searchButton">
+            <div className="inputSection">
+              <CiSearch className="search" style={{ fontSize: "25px" }} />
+              <input type="text" placeholder="Search for over 50+ courses" />
+            </div>
+            <div>
+              <input id="trial" type="button" value="Search" className="searchBtn" />
+            </div>
+          </div>
+
+        </section>
+      </section>
+
     </div>
   )
 }

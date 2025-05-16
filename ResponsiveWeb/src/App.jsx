@@ -9,6 +9,12 @@ import { CiSearch } from "react-icons/ci";
 
 const App = () => {
 
+//   useEffect(() => {
+//   fetch("http://localhost:5173/.com/")
+//     .then(res => res.json())
+//     .then(data => console.log(data));
+// }, []);
+
   let website = "hiddensmile"
   return (
     <div className="Container">
@@ -60,17 +66,19 @@ const App = () => {
         </div>
         <section className="section2">
           <div className="row">
-            <div style={{ fontSize: "30px", marginBottom: "10px", marginTop: "10px" }}>
+            <div className="row1">
               duolingo
             </div>
-            <div>
-              <img src={magicleapImage} alt="" style={{ width: "140px" }} />
+            <div className="row1">
+              <img className="magicLeap" src={magicleapImage} alt="" />
             </div>
-            <div style={{ fontSize: "30px", marginBottom: "10px", marginTop: "10px" }}>
-              <BsMicrosoft style={{ paddingTop: "10px" }} />Microsoft
+            <div  className="micorsoft row1" style={{  }}>
+              <BsMicrosoft  style={{ paddingTop: "30px" }} />
+             <p> Microsoft</p>
             </div>
-            <div style={{ fontSize: "30px", marginBottom: "10px", marginTop: "10px" }}>
-              <SiCodecov style={{ paddingTop: "10px" }} />Codecov
+            <div className="Codecov row1">
+              <SiCodecov  style={{ paddingTop: "30px" }} />
+              <p>Codecov </p>
             </div>
             <div>
 

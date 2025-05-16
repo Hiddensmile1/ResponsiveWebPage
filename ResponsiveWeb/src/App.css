@@ -125,6 +125,22 @@ a:hover {
 
 }
 
+.row1{
+  font-size: 30px;
+  margin-bottom: 10px;
+  margin-top: 10px; 
+}
+
+.magicLeap {
+ width: 120px;  /* Adjust as needed */
+    /* height: 50px;  */
+}
+
+.micorsoft, .Codecov{
+  display: flex;
+  gap: 3px;
+}
+
 .mainSection {
   /* background-color: red; */
   justify-content: center;
@@ -251,4 +267,48 @@ a:hover {
     /* margin-left: 50px; */
   }
 
+  .row {
+  background: linear-gradient(to right, rgb(192, 61, 192), #c778eb, #df81cb, #d5a0a8);
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  overflow: none;
 }
+
+
+
+.inputSection{
+margin-left: 30px;
+  position: relative;
+  display: inline-block;
+  border: 1px solid #dfdbdb;
+  border-radius: 4px;
+  padding: 4px;
+  overflow: none;
+
+  input {
+    
+    padding: 8px 30px 8px 60px;
+    width: 280px;
+    
+    
+  }
+
+  /* .search {
+    position: absolute;
+    left: 40px;
+    top: 20%;
+    transform: translateX(-90%);
+    color: #777;
+  } */
+}
+.searchButton{
+  height: 50px;
+  width: 100%;
+  /* margin-left: 100px; */
+  /* margin: auto; */
+   overflow: none;
+ padding-left: 0 50px 0 50px;
+}
+}
+
